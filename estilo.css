@@ -26,7 +26,7 @@ nav a {
     color: #c4c4cc;
     text-decoration: none;
     font-size: 1.3em;
-    font-weight: 500px;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
@@ -34,6 +34,12 @@ nav a:hover {
     color: #0173fe;
 }
 
+nav a.ativo {
+    color: #0173fe;
+    font-weight: bold;
+}
+
+/* --inicio-- */
 .principal {
     display: flex;
     flex-direction: column;
@@ -49,7 +55,7 @@ nav a:hover {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid #000000;
+    border: 2px solid #0173fe;
     box-shadow: 0 0 20px rgba(96, 165, 250, 0.2);
     margin-bottom: 24px;
     transition: transform 0.3s;
@@ -79,3 +85,110 @@ nav a:hover {
     max-width: 650px;
 }
 
+/* --sobre mim-- */
+
+.sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    max-width: 1500px;
+    margin: 0% auto;
+    padding: 0 40px;
+
+}
+
+.sobre h1 {
+    text-align: center;
+    padding: 20px;    
+}
+
+.bloco-sobre p {
+    color: #c4c4cc;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+.bloco-sobre {
+    background-color: #202024;
+    border: 2px solid #323238;
+    border-radius: 16px;
+    padding: 30px;
+    width: 75%;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.bloco-sobre:hover {
+    transform: scale(1.05);
+    border-color: #0173fe;
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.15);
+}
+
+.bloco-sobre h2 {
+    color: #0173fe;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.bloco-sobre:nth-of-type(odd) {
+    align-self: flex-start;
+    border-left: 6px solid #0173fe;
+}
+
+.bloco-sobre:nth-of-type(even) {
+    align-self: flex-end;
+    border-right: 6px solid #0173fe;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* --projetos-- */
+
+.card {
+    background-color: #202024;
+    border: 2px solid #323238;
+    border-radius: 16px;
+    display: flex;
+    overflow: hidden;
+    height: 280px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border-color: #0173fe;
+    box-shadow: 0 0 20px rgba(1, 115, 254, 0.15);
+}
+
+.card-conteudo {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-conteudo h2 {
+    color: #0173fe;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+.card-conteudo p {
+    color: #c4c4cc;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.midia {
+    width: 45%;
+    position: relative;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.midia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
