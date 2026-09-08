@@ -263,3 +263,58 @@ nav a.ativo {
     text-decoration: underline;
 }
 
+/* --celular-- */
+
+@media (max-width: 768px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a{
+        font-size: 1.1em;
+    }
+
+    .principal .sobre {
+        padding: 30px, 20px;
+        margin-top: 20px;
+    }
+
+    .bloco-sobre {
+        width: 100%;
+        align-self: center !important;
+        text-align: left !important;
+        border-right: 2px solid #323238 !important;
+        border-left: 6px solid #0173fe !important;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .midia {
+        width: 100%;
+        height: 200px;
+        clip-path: none;
+        border-top: 2px solid #323238;
+    }
+
+    .choque-dominio {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .dominio {
+        height: 120px;
+        width: 100%;
+    }
+
+    .dominio:hover {
+        flex: 1;
+        transform: scale(1.02);
+    }
+
+}
